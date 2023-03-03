@@ -1,5 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.login_stateful">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
    <application
         android:label="login_stateful"
         android:name="${applicationName}"
