@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget{
+  
   @override
   createState(){
     return LoginScreenState();
@@ -16,7 +17,8 @@ class LoginScreenState extends State<LoginScreen>{
             children: [
               emailField(),
               passwordField(),
-              // submitButton(),
+              Container(margin:const EdgeInsets.only(top: 25.0)),
+              submitButton(),
             ],
           ),
         ),
@@ -41,7 +43,14 @@ class LoginScreenState extends State<LoginScreen>{
       ),
     );
   }
-  // Widget submitButton(){
-  //   return
-  // }
+  Widget submitButton(){
+    return ElevatedButton(
+
+      style: ButtonStyle(
+        backgroundColor: MaterialStateProperty.all<Color>(Colors.redAccent),
+      ),
+      child: const Text('SUBMIT'),
+      onPressed: (){},
+    );
+  }
 }
